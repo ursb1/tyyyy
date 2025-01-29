@@ -8,6 +8,8 @@ sentencepiece
 xformers
 scipy
 numpy
+coloredlogs
+hypercorn
 
 # Only vllm with cu121 can be installed from pypi
 # If you need vllm+cu118, please download and install wheel 
