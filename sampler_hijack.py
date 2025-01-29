@@ -235,7 +235,7 @@ def generation_config_init_patch(self, **kwargs):
 
 
 def hijack_samplers():
-    transformers.GenerationMixin._get_logits_warper_old = transformers.GenerationMixin._get_logits_warper
+    transformers.GenerationMixin._get_logits_warper_old = transformers.GenerationMixin._get_logits_processor
     transformers.GenerationMixin._get_logits_warper = get_logits_warper_patch
 
     transformers.GenerationMixin._get_logits_processor_old = transformers.GenerationMixin._get_logits_processor
